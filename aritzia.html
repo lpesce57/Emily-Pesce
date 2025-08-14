@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emily Pesce Portfolio</title>
+  <link rel="icon" href="img/ep.png" type="image/png" />
+  <link rel="stylesheet" href="style/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SZXR92HD8C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SZXR92HD8C');
+</script>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="nav-left"><a href="index.html">Emily Pesce</a></div>
+    <nav class="nav-right" id="nav-menu">
+      <a href="about_me.html">About Me</a>
+      <a href="design.html">Projects</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <!-- Back link -->
+  <a href="design.html" class="back-button">← Back</a>
+
+  <main class="project-detail" id="main">
+    <h1>Harry Potter Games</h1>
+    <h2 class="sr-only">Project Detail</h2>
+
+    <!-- Cover image -->
+    <img src="img/hp.jpg"
+         alt=" "
+         style="width:100%;max-height:400px;object-fit:cover;border-radius:16px;margin:1.5rem 0;"/>
+
+    <!-- Meta data -->
+    <section class="project-meta">
+      <p><strong>Description:</strong> A magical two-part site featuring a 20-minute character-guessing challenge and a spell duel against Professor Snape.</p>
+      <p><strong>Class:</strong> SI 379: Building Interactive Applications</p>
+      <p><strong>Tools Utilized:</strong> HTML, CSS, JavaScript, HP-API, Groq API</p>
+      <p><strong>Project Duration:</strong> April – May 2025</p>
+      <p><strong>Explore Site:</strong> <a href="https://lpesce57.github.io/lpesce_379/harry-potter/" target="_blank" rel="noopener noreferrer">Live Demo</a></p>
+    </section>
+
+    <!-- Sections -->
+    <h2>Problem Statement</h2>
+    <p>
+      For our final project, we were given full creative freedom to build a website that demonstrated new technical skills alongside concepts we’d learned throughout the semester.  
+      As a lifelong Harry Potter fan, I set out to transform Wizarding-world trivia into engaging, browser-based games powered by external APIs and creative interactivity.
+    </p>
+
+    <h2>About the Course</h2>
+    <p>
+      SI 379 focuses on building interactive web applications with HTML, CSS, JavaScript, and React.  
+      Coursework covers topics such as LocalStorage, package management, and real-world API integration to practice modern development workflows.
+    </p>
+
+    <h2>Analysis</h2>
+    <p>
+      I explored several Harry Potter APIs before selecting HP-API (character & spell data) and Groq API (AI spell adjudication) for their simplicity and impact.  
+      Extensive console debugging and user-testing informed pacing, timer logic, and input handling.
+    </p>
+
+    <h3>Analysis Methods</h3>
+    <p>
+      Prototype testing, console logging, and iterative UI reviews guided refinement of the character-guessing grid and duel mechanics.  
+      JSON parsing and responsive-design checks ensured smooth gameplay across devices.
+    </p>
+
+    <h2>Design</h2>
+    <p>
+      The visual theme draws from the Marauder’s Map.  
+      The landing page presents both games with concise descriptions and entry points.  
+      Animations, confetti bursts, health bars, and hover states amplify the playful tone.
+    </p>
+
+    <h2>Design Evolution</h2>
+    <p>
+      The duel originally lacked a health bar and AI logic.  
+      Iterations introduced the Groq API for spell resolution and a responsive health bar for clarity.  
+      In the guessing game, nickname recognition and pause/resume functionality were added to improve usability and engagement.
+    </p>
+
+    <h2>Key Design Decisions</h2>
+    <ul>
+      <li>Groq API decides duel outcomes based on spell comparisons.</li>
+      <li>HP-API supplies character data and spell lists.</li>
+      <li>Custom timer logic with pause/resume for the guessing challenge.</li>
+      <li>Visual feedback (confetti, character images) celebrates milestones.</li>
+      <li>Accessible inputs, error messaging, and responsive layout.</li>
+    </ul>
+
+    <!-- Supplementary image -->
+    <img src="img/hp_game.jpg"
+         alt="Screenshot of the spell-duel interface showing health bars and spell input"
+         style="width:100%;max-width:800px;border-radius:12px;margin:2rem auto;display:block;"/>
+
+    <h2>Final Result</h2>
+    <p>
+      Two fully functional browser games:  
+      a timed character-guessing challenge and an AI-driven spell duel against Snape — both built from scratch and optimized for desktop and mobile.
+    </p>
+
+    <!-- Secondary back link -->
+    <a href="design.html" class="back-button" style="margin-top:2rem;">← Back</a>
+  </main>
+
+   <!-- Footer -->
+   <footer>
+    <p>EMILY PESCE</p>
+    <div class="contact-icons">
+      <a href="mailto:emily_pesce@fitnyc.edu" aria-label="Email">
+        <!-- Email Icon (footer) -->
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"
+          viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="m2.357 7.714 6.98 4.654c.963.641 1.444.962 1.964 1.087.46.11.939.11 1.398 0 .52-.125 1.001-.446 1.964-1.087l6.98-4.654M7.157 19.5h9.686c1.68 0 2.52 0 3.162-.327a3 3 0 0 0 1.31-1.311c.328-.642.328-1.482.328-3.162V9.3c0-1.68 0-2.52-.327-3.162a3 3 0 0 0-1.311-1.311c-.642-.327-1.482-.327-3.162-.327H7.157c-1.68 0-2.52 0-3.162.327a3 3 0 0 0-1.31 1.311c-.328.642-.328 1.482-.328 3.162v5.4c0 1.68 0 2.52.327 3.162a3 3 0 0 0 1.311 1.311c.642.327 1.482.327 3.162.327"/>
+        </svg>
+      </a>
+
+      <a href="https://www.linkedin.com/in/emily-pesce-/" target="_blank" aria-label="LinkedIn">
+        <!-- LinkedIn Icon (footer) -->
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"
+          viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 9.4c0-2.24 0-3.36.436-4.216a4 4 0 0 1 1.748-1.748C6.04 3 7.16 3 9.4 3h5.2c2.24 0 3.36 0 4.216.436a4 4 0 0 1 1.748 1.748C21 6.04 21 7.16 21 9.4v5.2c0 2.24 0 3.36-.436 4.216a4 4 0 0 1-1.748 1.748C17.96 21 16.84 21 14.6 21H9.4c-2.24 0-3.36 0-4.216-.436a4 4 0 0 1-1.748-1.748C3 17.96 3 16.84 3 14.6zm5-1.775v.5"/>
+          <path d="M8 16.375V10.75m4 5.625V13.5m0 0v-2.75m0 2.75c0-1.288 1.222-2 2.4-2 1.6 0 1.6 1.375 1.6 2.875v2"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
