@@ -109,7 +109,7 @@ margin:0 auto;
 
 .project-card img{
 width:100%;
-height:180px;
+height:250px;
 object-fit:cover;
 transition:transform .3s;        /* smooth zoom */
 }
@@ -131,7 +131,7 @@ padding:1.2rem;
 .project-right button{
 padding:.5rem 1.4rem;
 background:var(--clr-light);
-color:var(--clr-blue-300);
+color: var(--clr-dark);
 border-radius:6px;
 font-size:1rem;
 font-weight:700;
